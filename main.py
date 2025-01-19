@@ -56,6 +56,8 @@ st.markdown("Provide input values for the features and get predictions.")
 st.markdown("### Input Features")
 input_data = {feature: st.number_input(f"{feature}", value=0.0) for feature in features}
 
+target_columns = ['Lbl'] + [f'Mtlp{i}' for i in range(2, 17)]
+
 # Prediction logic
 if st.button("Predict"):
     try:
@@ -77,7 +79,7 @@ if st.button("Predict"):
 
         # Display predictions
         st.markdown("### Predictions")
-        predictions_df = pd.DataFrame(predictions, columns=[f"Target {i+1}" for i in range(output_size)])
+        predictions_df = pd.DataFrame(predictions, columns=target_columns)
         st.dataframe(predictions_df)
 
         # Option to download predictions
