@@ -4,6 +4,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from torch import nn
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f"Using device: {device}")
 
 # Define the neural network class
 class MultiOutputNN(nn.Module):
@@ -29,7 +31,11 @@ model_path = 'multi_output_nn_model.pth'
 input_size = 20  # Match PCA output size
 output_size = 16  # Number of targets
 model = MultiOutputNN(input_size, output_size)
-model.load_state_dict(torch.load(model_path))
+model.load_state_dict(torch.load("multi_output_nn_model.pth", map_location=device))
+
+# Move the model to the detected device
+model.to(device)
+
 model.eval()
 
 # Define feature list
