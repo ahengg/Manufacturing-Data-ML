@@ -39,6 +39,7 @@ Model neural network yang digunakan adalah model **Multi-Output Regression Neura
 - **Loss Function**: Mean Squared Error (MSE).
 - **Optimizer**: Adam Optimizer dengan learning rate 0.001.
 - **Runtime**: Model dilatih menggunakan GPU dengan runtime sekitar 5 menit.
+- **Epoch**: Epoch ada berada di 100.000
 
 ### 2. **Hasil Pelatihan**
 
