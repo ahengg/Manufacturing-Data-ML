@@ -79,5 +79,17 @@ Model dievaluasi menggunakan metrik **Root Mean Squared Error (RMSE)** untuk set
 **Average RMSE**: 140.01
 Dengan menggunakan RMSE, kita mendapatkan angka yang lebih mudah dipahami dalam konteks evaluasi model. Misalnya, jika RMSE adalah 140.32, itu berarti model secara rata-rata memiliki kesalahan sekitar 103.32 unit dari target yang diprediksi, dan ini lebih mudah dimengerti daripada MSE yang memiliki satuan yang tidak langsung terkait dengan data.
 
+Untuk menganalisis gambar ini dan menjelaskan apakah model ini mengalami overfitting atau underfitting, mari kita lihat grafik yang menunjukkan Training Loss dan Validation Loss sepanjang epochs.
+![My Image](training_vs_validation_loss.png)
+Berdasarkan Grafik:
+Training Loss (garis biru) sangat cepat turun ke level rendah, yang menunjukkan bahwa model berhasil belajar dengan baik pada data pelatihan.
+Validation Loss (garis merah) mengikuti penurunan yang sangat mirip dengan training loss dan stabil pada nilai yang rendah, tanpa adanya peningkatan signifikan setelah beberapa epochs.
+Mengapa ini tidak Overfit atau Underfit?
+
+-  **Tidak Overfit**: Tidak ada perbedaan besar antara training loss dan validation loss. Biasanya, jika terjadi overfitting, training loss akan jauh lebih rendah dibandingkan dengan validation loss, menunjukkan bahwa model sangat baik dalam mempelajari data pelatihan, tetapi tidak dapat menggeneralisasi dengan baik pada data validasi.
+- **Tidak Underfit** : Training loss turun dengan cepat, menunjukkan bahwa model berhasil belajar dengan baik dari data pelatihan, dan validation loss juga turun dengan cara yang sangat mirip, menunjukkan bahwa model dapat menggeneralisasi dengan baik pada data yang tidak terlihat sebelumnya.
+Kesimpulan:
+Grafik ini menunjukkan bahwa model memiliki keseimbangan yang baik antara pelatihan dan validasi, yang berarti model tidak overfit dan tidak underfit. Model dapat belajar dari data pelatihan dan menggeneralisasi dengan baik pada data validasi, sehingga menunjukkan performa yang stabil dan sehat.
+
 ## Hasil Deployment
 https://manufacturing-data-m-ljdryum3eqkxw5is8boytc.streamlit.app/
