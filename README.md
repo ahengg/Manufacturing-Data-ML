@@ -84,7 +84,7 @@ Log hasil bisa dilihat dari report_log_train.txt
 | MTLp16 | 19,995.49 | 141.41 |
 
 **Average RMSE**: 140.01
-Dengan menggunakan RMSE, kita mendapatkan angka yang lebih mudah dipahami dalam konteks evaluasi model. Misalnya, jika RMSE adalah 140.32, itu berarti model secara rata-rata memiliki kesalahan sekitar 103.32 unit dari target yang diprediksi, dan ini lebih mudah dimengerti daripada MSE yang memiliki satuan yang tidak langsung terkait dengan data.
+Dengan menggunakan RMSE, kita mendapatkan angka yang lebih mudah dipahami dalam konteks evaluasi model. Misalnya, jika RMSE adalah 140.32, itu berarti model secara rata-rata memiliki kesalahan sekitar 140.32 unit dari target yang diprediksi, dan ini lebih mudah dimengerti daripada MSE yang memiliki satuan yang tidak langsung terkait dengan data.
 
 Untuk menganalisis gambar ini dan menjelaskan apakah model ini mengalami overfitting atau underfitting, mari kita lihat grafik yang menunjukkan Training Loss dan Validation Loss sepanjang epochs.
 ![My Image](training_vs_validation_loss.png)
