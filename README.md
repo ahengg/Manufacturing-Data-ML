@@ -61,7 +61,7 @@ Neural networks membutuhkan banyak komputasi, terutama untuk data besar. GPU (Gr
 ### 2. **Hasil Pelatihan**
 
 Model dievaluasi menggunakan metrik **Root Mean Squared Error (RMSE)** untuk setiap target variabel. RMSE memberikan interpretasi langsung dalam satuan yang sama dengan target.
-
+Log hasil bisa dilihat dari report_log_train.txt
 #### Hasil Evaluasi Model
 
 | Target | MSE       | RMSE   |
