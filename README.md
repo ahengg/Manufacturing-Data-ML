@@ -8,7 +8,8 @@ Proyek ini bertujuan untuk membangun model neural network multi-output regressio
 
 ### 1. **Drop Kolom dengan P-Value > 0.05**
 
-Proses awal melibatkan penghapusan kolom yang distribusinya dianggap mirip dengan kolom lain. Kolom-kolom ini diidentifikasi menggunakan statistik Kolmogorov-Smirnov Test (ks\_2samp). Kolom dengan P-Value > 0.05 dihapus untuk mengurangi redundansi dalam data.
+Proses awal melibatkan penghapusan kolom yang distribusinya dianggap mirip dengan kolom lain. Kolom-kolom ini diidentifikasi menggunakan statistik Kolmogorov-Smirnov Test (ks\_2samp). Kolom dengan P-Value > 0.05 dihapus untuk mengurangi redundansi dalam data. Contoh data bersifat redundant
+![My Image](Sim_dis.png)
 
 ### 2. **Seleksi Fitur dengan Feature Importance**
 
