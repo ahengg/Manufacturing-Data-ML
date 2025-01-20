@@ -27,6 +27,15 @@ Model neural network yang digunakan adalah model **Multi-Output Regression Neura
 - **Layer 1**: Fully Connected Layer dengan 128 neuron dan fungsi aktivasi ReLU.
 - **Layer 2**: Fully Connected Layer dengan 64 neuron dan fungsi aktivasi ReLU.
 - **Layer 3**: Fully Connected Layer dengan jumlah neuron sesuai jumlah target output.
+## Kenapa Memilih Neural Network?
+Kemampuan Menangani Data Besar dan Kompleks
+Neural networks sangat efektif untuk menangani data dalam jumlah besar dengan struktur yang kompleks. Dalam proyek ini, dataset yang digunakan sangat besar dan penuh dengan pola yang tidak linear, sehingga metode tradisional seperti regresi linear atau pohon keputusan tidak cukup untuk menangkap hubungan antar variabel dengan akurat. Neural networks mampu belajar dari data secara mendalam dan menemukan pola yang kompleks dalam data yang tidak bisa ditemukan dengan metode lainnya.
+
+Kemampuan untuk Belajar Secara Otomatis dari Data
+Salah satu keunggulan utama neural network adalah kemampuannya untuk mengekstrak fitur secara otomatis dari data mentah. Ini sangat mengurangi kebutuhan akan rekayasa fitur manual yang sering kali diperlukan dengan metode lain. Dengan NN, model belajar langsung dari data tanpa perlu pengaturan fitur yang rumit, yang sangat menguntungkan untuk aplikasi yang melibatkan data besar dan tak terstruktur.
+
+Peningkatan Kinerja dengan GPU
+Neural networks membutuhkan banyak komputasi, terutama untuk data besar. GPU (Graphics Processing Unit) memungkinkan pemrosesan paralel yang jauh lebih efisien, sehingga waktu pelatihan dapat dipersingkat secara signifikan. Dengan GPU, proses perhitungan dapat dilakukan dalam waktu yang lebih cepat dibandingkan dengan menggunakan CPU, yang sangat penting ketika bekerja dengan dataset yang besar dan kompleks. GPU mendukung pengolahan data dalam jumlah besar secara lebih cepat dan efisien, memungkinkan eksperimen lebih banyak dalam waktu yang terbatas.
 
 ---
 
