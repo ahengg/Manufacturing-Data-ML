@@ -19,6 +19,13 @@ Setelah preprocessing awal, dilakukan seleksi fitur menggunakan algoritma Random
 
 Principal Component Analysis (PCA) digunakan untuk mereduksi dimensi data sambil mempertahankan 95% dari variansi total dalam dataset. Komponen PCA yang dihasilkan digunakan sebagai input untuk model neural network.
 
+Maka Hasil Fitur yang didapatkan adalah 
+```python
+features = ['sku16', 'sku12', 'sku2', 'sku1', 'sku15', 'sku13', 'sku14', 'sku9', 'sku11',
+            'compidx1lt10', 'compidx1lt20', 'timeunit', 'sku10', 'demandseg3', 'compidx1lt6',
+            'demandseg2', 'compidx1lt30', 'compidx10lt30', 'demandseg1', 'compidx1lt2',
+            'compidx9lt30', 'compidx0lt30', 'compidx14lt30', 'compidx6lt30', 'compidx11lt30']
+```
 ---
 
 ## Arsitektur Model Neural Network 🤖🤖🤖
